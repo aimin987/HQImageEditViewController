@@ -88,14 +88,7 @@
         
         [_rotateButton setImage:image forState:UIControlStateNormal];
         
-//        NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"editimages" ofType:@"bundle"]];
-//        if (bundle != nil) {
-//            NSString *imagePath = [bundle pathForResource:@"ic_rotate_90_degrees_ccw" ofType:@"png"];
-//            UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
-//            [_rotateButton setImage:image forState:UIControlStateNormal];
-//        }
-        
-//        [_rotateButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ic_rotate_90_degrees_ccw" ofType:@"png"]] forState:UIControlStateNormal];
+//      [_rotateButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ic_rotate_90_degrees_ccw" ofType:@"png"]] forState:UIControlStateNormal];
         _rotateButton.tag = 0;
         _rotateButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [_rotateButton.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
