@@ -34,6 +34,8 @@ static inline UIEdgeInsets hq_safeAreaInset() {
 
 @property (nonatomic, assign) BOOL showNavigationBarWhenPop;
 
+@property (nonatomic, assign) CGFloat scaling;
+
 @end
 
 @implementation HQImageEditViewController
@@ -236,7 +238,28 @@ static inline UIEdgeInsets hq_safeAreaInset() {
     if (_editViewSize.width == 0 && _editViewSize.height == 0) {
         return CGSizeMake((CGFloat)(([[UIScreen mainScreen] bounds].size.width) - 20*2), (CGFloat)(([[UIScreen mainScreen] bounds].size.width) - 20*2));
     } else {
-        return _editViewSize;
+        
+        CGFloat screenWidth = [[UIScreen mainScreen] bounds].size.width;
+        CGFloat screenHeight = [[UIScreen mainScreen] bounds].size.height;
+               
+        CGFloat ratio = _editViewSize.height / _editViewSize.width;
+        CGFloat frameWidth = screenWidth - 40.f;
+        CGFloat frameHeight = frameWidth * ratio;
+               
+        CGFloat safeHeight = screenHeight - hq_safeAreaInset().top - hq_safeAreaInset().bottom - 49*2;
+               
+        if (frameHeight > safeHeight) {
+                   
+            CGFloat ratio = _editViewSize.width / _editViewSize.height;
+            frameHeight = safeHeight - 40.0;
+            frameWidth = frameHeight * ratio;
+        }
+               
+        self.scaling = _editViewSize.width / frameWidth;
+               
+        return CGSizeMake(frameWidth, frameHeight);
+        
+//        return _editViewSize;
     }
 }
 
@@ -253,6 +276,7 @@ static inline UIEdgeInsets hq_safeAreaInset() {
         _captureView = [[HQEditImageCaptureView alloc] init];
         _captureView.captureView = self.scrollView;
         _captureView.imageView = self.imageView;
+        _captureView.scaling = self.scaling;
     }
     return _captureView;
 }

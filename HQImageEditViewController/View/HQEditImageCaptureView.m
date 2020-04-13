@@ -28,7 +28,7 @@
 
 - (UIImage *)captureImage {
     
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.frame.size.width,self.frame.size.height), NO, 0.0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.frame.size.width,self.frame.size.height), NO, self.scaling);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -82,6 +82,13 @@
     } else {
         return [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:UIImageOrientationRight];
     }
+}
+
+-(CGFloat)scaling {
+    if (_scaling && _scaling > 0) {
+        return _scaling;
+    }
+    return 1.0f;
 }
 
 @end

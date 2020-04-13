@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIView *captureView;
 
 @property (nonatomic, assign) NSInteger rotateTimes;
+@property (nonatomic, assign) CGFloat scaling;
 
 
 /**
