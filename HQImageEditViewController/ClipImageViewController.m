@@ -29,13 +29,12 @@
 {
     // 获取原图片
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    
+
     if (self.clipWidth == 0 || self.clipHeight == 0) {
         const char* imagePath = [self saveImage:image];
         if (self.pickCompletion) {
             self.pickCompletion(-1, imagePath);
         }
-        
         [self dismissViewControllerAnimated:YES completion:nil];
     }else
     {
@@ -84,21 +83,6 @@
         self.pickCompletion(0,"");
     }
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-
-- (int) clipWidth {
-    if (_clipWidth && _clipWidth != 0) {
-        return _clipWidth;
-    }
-    return 0;
-}
-
-- (int) clipHeight {
-    if (_clipHeight && _clipHeight != 0) {
-        return _clipWidth;
-    }
-    return 0;
 }
 
 - (BOOL)allowsEditing {
