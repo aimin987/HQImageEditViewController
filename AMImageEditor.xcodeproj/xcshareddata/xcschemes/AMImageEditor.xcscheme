@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E5B81CD0244048C700DEA75F"
-               BuildableName = "libHQImageEditViewController.a"
-               BlueprintName = "HQImageEditViewController"
-               ReferencedContainer = "container:HQImageEditViewController.xcodeproj">
+               BuildableName = "libAMImageEditor.a"
+               BlueprintName = "AMImageEditor"
+               ReferencedContainer = "container:AMImageEditor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E5B81CD0244048C700DEA75F"
-            BuildableName = "libHQImageEditViewController.a"
-            BlueprintName = "HQImageEditViewController"
-            ReferencedContainer = "container:HQImageEditViewController.xcodeproj">
+            BuildableName = "libAMImageEditor.a"
+            BlueprintName = "AMImageEditor"
+            ReferencedContainer = "container:AMImageEditor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

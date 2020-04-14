@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E59D2E2A2445526000DC4F5F /* ClipImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59D2E282445526000DC4F5F /* ClipImageViewController.m */; };
+		E59D2E2B2445529B00DC4F5F /* ClipImageViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E59D2E292445526000DC4F5F /* ClipImageViewController.h */; };
 		E5B81D072440490000DEA75F /* HQImageEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CDE2440490000DEA75F /* HQImageEditViewController.m */; };
 		E5B81D082440490000DEA75F /* HQEditImageActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CE62440490000DEA75F /* HQEditImageActionView.m */; };
 		E5B81D092440490000DEA75F /* HQEditImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CE82440490000DEA75F /* HQEditImageEditView.m */; };
@@ -21,7 +23,6 @@
 		E5B81D122440490000DEA75F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D032440490000DEA75F /* MASConstraint.m */; };
 		E5B81D132440490000DEA75F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D052440490000DEA75F /* MASViewConstraint.m */; };
 		E5B81D142440490000DEA75F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D062440490000DEA75F /* MASViewAttribute.m */; };
-		E5B81D152440495300DEA75F /* HQImageEditViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5B81CEC2440490000DEA75F /* HQImageEditViewController.h */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,14 +32,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				E5B81D152440495300DEA75F /* HQImageEditViewController.h in CopyFiles */,
+				E59D2E2B2445529B00DC4F5F /* ClipImageViewController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E5B81CD1244048C700DEA75F /* libHQImageEditViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHQImageEditViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59D2E282445526000DC4F5F /* ClipImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipImageViewController.m; sourceTree = "<group>"; };
+		E59D2E292445526000DC4F5F /* ClipImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipImageViewController.h; sourceTree = "<group>"; };
+		E5B81CD1244048C700DEA75F /* libAMImageEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAMImageEditor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B81CDE2440490000DEA75F /* HQImageEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQImageEditViewController.m; sourceTree = "<group>"; };
 		E5B81CE62440490000DEA75F /* HQEditImageActionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQEditImageActionView.m; sourceTree = "<group>"; };
 		E5B81CE72440490000DEA75F /* HQEditImageCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQEditImageCaptureView.h; sourceTree = "<group>"; };
@@ -97,7 +100,7 @@
 		E5B81CD2244048C700DEA75F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E5B81CD1244048C700DEA75F /* libHQImageEditViewController.a */,
+				E5B81CD1244048C700DEA75F /* libAMImageEditor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +108,8 @@
 		E5B81CDD2440490000DEA75F /* HQImageEditViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E59D2E292445526000DC4F5F /* ClipImageViewController.h */,
+				E59D2E282445526000DC4F5F /* ClipImageViewController.m */,
 				E5B81CDE2440490000DEA75F /* HQImageEditViewController.m */,
 				E5B81CE52440490000DEA75F /* View */,
 				E5B81CEC2440490000DEA75F /* HQImageEditViewController.h */,
@@ -160,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E5B81CD0244048C700DEA75F /* HQImageEditViewController */ = {
+		E5B81CD0244048C700DEA75F /* AMImageEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5B81CDA244048C700DEA75F /* Build configuration list for PBXNativeTarget "HQImageEditViewController" */;
+			buildConfigurationList = E5B81CDA244048C700DEA75F /* Build configuration list for PBXNativeTarget "AMImageEditor" */;
 			buildPhases = (
 				E5B81CCD244048C700DEA75F /* Sources */,
 				E5B81CCE244048C700DEA75F /* Frameworks */,
@@ -172,9 +177,9 @@
 			);
 			dependencies = (
 			);
-			name = HQImageEditViewController;
+			name = AMImageEditor;
 			productName = HQImageEditViewController;
-			productReference = E5B81CD1244048C700DEA75F /* libHQImageEditViewController.a */;
+			productReference = E5B81CD1244048C700DEA75F /* libAMImageEditor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E5B81CCC244048C700DEA75F /* Build configuration list for PBXProject "HQImageEditViewController" */;
+			buildConfigurationList = E5B81CCC244048C700DEA75F /* Build configuration list for PBXProject "AMImageEditor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E5B81CD0244048C700DEA75F /* HQImageEditViewController */,
+				E5B81CD0244048C700DEA75F /* AMImageEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +231,7 @@
 				E5B81D0E2440490000DEA75F /* MASConstraintMaker.m in Sources */,
 				E5B81D122440490000DEA75F /* MASConstraint.m in Sources */,
 				E5B81D0B2440490000DEA75F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E59D2E2A2445526000DC4F5F /* ClipImageViewController.m in Sources */,
 				E5B81D0F2440490000DEA75F /* MASLayoutConstraint.m in Sources */,
 				E5B81D092440490000DEA75F /* HQEditImageEditView.m in Sources */,
 			);
@@ -373,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E5B81CCC244048C700DEA75F /* Build configuration list for PBXProject "HQImageEditViewController" */ = {
+		E5B81CCC244048C700DEA75F /* Build configuration list for PBXProject "AMImageEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E5B81CD8244048C700DEA75F /* Debug */,
@@ -382,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5B81CDA244048C700DEA75F /* Build configuration list for PBXNativeTarget "HQImageEditViewController" */ = {
+		E5B81CDA244048C700DEA75F /* Build configuration list for PBXNativeTarget "AMImageEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E5B81CDB244048C700DEA75F /* Debug */,

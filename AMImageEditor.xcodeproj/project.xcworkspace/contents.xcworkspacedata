@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HQImageEditViewController.xcodeproj">
+      location = "self:/Users/aimin/IOS/HQImageEditViewController/AMImageEditor.xcodeproj">
    </FileRef>
 </Workspace>
