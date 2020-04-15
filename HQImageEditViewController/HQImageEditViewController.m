@@ -13,8 +13,9 @@
 #import "Masonry.h"
 
 static inline UIEdgeInsets hq_safeAreaInset() {
-    if (@available(iOS 11.0, *)) {
-        return [UIApplication sharedApplication].keyWindow.safeAreaInsets;
+    if (@available(iOS 10.0, *)) {
+        return [UIApplication sharedApplication].windows.firstObject.safeAreaInsets;
+//        return [UIApplication sharedApplication].keyWindow.safeAreaInsets;
     }
     return UIEdgeInsetsZero;
 }
