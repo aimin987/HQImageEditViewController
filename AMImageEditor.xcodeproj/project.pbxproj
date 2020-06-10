@@ -13,16 +13,6 @@
 		E5B81D082440490000DEA75F /* HQEditImageActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CE62440490000DEA75F /* HQEditImageActionView.m */; };
 		E5B81D092440490000DEA75F /* HQEditImageEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CE82440490000DEA75F /* HQEditImageEditView.m */; };
 		E5B81D0A2440490000DEA75F /* HQEditImageCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CEA2440490000DEA75F /* HQEditImageCaptureView.m */; };
-		E5B81D0B2440490000DEA75F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CEF2440490000DEA75F /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		E5B81D0C2440490000DEA75F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CF82440490000DEA75F /* ViewController+MASAdditions.m */; };
-		E5B81D0D2440490000DEA75F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CFC2440490000DEA75F /* MASCompositeConstraint.m */; };
-		E5B81D0E2440490000DEA75F /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CFD2440490000DEA75F /* MASConstraintMaker.m */; };
-		E5B81D0F2440490000DEA75F /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CFE2440490000DEA75F /* MASLayoutConstraint.m */; };
-		E5B81D102440490000DEA75F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81CFF2440490000DEA75F /* NSArray+MASAdditions.m */; };
-		E5B81D112440490000DEA75F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D002440490000DEA75F /* View+MASAdditions.m */; };
-		E5B81D122440490000DEA75F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D032440490000DEA75F /* MASConstraint.m */; };
-		E5B81D132440490000DEA75F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D052440490000DEA75F /* MASViewConstraint.m */; };
-		E5B81D142440490000DEA75F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B81D062440490000DEA75F /* MASViewAttribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -219,20 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5B81D132440490000DEA75F /* MASViewConstraint.m in Sources */,
-				E5B81D142440490000DEA75F /* MASViewAttribute.m in Sources */,
 				E5B81D0A2440490000DEA75F /* HQEditImageCaptureView.m in Sources */,
 				E5B81D072440490000DEA75F /* HQImageEditViewController.m in Sources */,
-				E5B81D102440490000DEA75F /* NSArray+MASAdditions.m in Sources */,
-				E5B81D0C2440490000DEA75F /* ViewController+MASAdditions.m in Sources */,
-				E5B81D0D2440490000DEA75F /* MASCompositeConstraint.m in Sources */,
 				E5B81D082440490000DEA75F /* HQEditImageActionView.m in Sources */,
-				E5B81D112440490000DEA75F /* View+MASAdditions.m in Sources */,
-				E5B81D0E2440490000DEA75F /* MASConstraintMaker.m in Sources */,
-				E5B81D122440490000DEA75F /* MASConstraint.m in Sources */,
-				E5B81D0B2440490000DEA75F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				E59D2E2A2445526000DC4F5F /* ClipImageViewController.m in Sources */,
-				E5B81D0F2440490000DEA75F /* MASLayoutConstraint.m in Sources */,
 				E5B81D092440490000DEA75F /* HQEditImageEditView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -343,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
